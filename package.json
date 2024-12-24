@@ -1,0 +1,20 @@
+{
+  "name": "se3040-assignment02-iudantha",
+  "version": "1.0.0",
+  "description": "Nasa web project BE",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run client\" \"npm run server\"",
+    "client": "cd client && npm run dev",
+    "server": "cd server && npm start",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install && cd ../",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.0"
+  }
+}
